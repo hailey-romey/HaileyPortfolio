@@ -1,0 +1,214 @@
+/* Project Showcase Grid */
+.flex-grid{
+    display: -ms-flexbox;
+    display:flex;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+/* Project Showcase Grid */
+.flex-grid{
+    display: -ms-flexbox;
+    display:flex;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.row{
+    display: -ms-flexbox;
+    display:flex;
+    padding-top: 0rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Project Grids */
+.project{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    max-width: 15rem;
+    padding: 0;
+    margin: 0;
+}
+
+.project a{
+    background-color:white;
+    border-style: solid;
+    border-color:black;
+    border-width:0.05rem;
+}
+
+
+
+.project a:hover .title-row, a:focus .title-row{
+    background-color: rgb(53, 106, 252);
+    transition-duration: 1s;
+}
+
+
+.project p{
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.title-row{
+flex: 1;
+background-color: black;
+color: white;
+padding:0.2rem;
+}
+
+.img-row{
+flex: 3;
+padding:0;
+margin: 0;
+}
+
+.img-row img{
+    max-width: 100%;
+}
+
+.description-row{
+flex: 2;
+font-size: .5rem;
+padding-top: 1rem;
+padding-left:2rem;
+padding-right:2rem;
+text-align: left;
+border:0;
+}
+
+
+/* Contact Form */
+.form {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: column;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    position:relative;
+    margin:auto;
+    max-width: 50em;
+    background-color:rgb(230, 230, 230);
+    border-color:rgb(206, 206, 206);
+    border-style: solid;
+    border-width: thin;
+    padding: 2rem;
+}
+
+
+
+.row-element{
+    width: 30em;
+}
+
+.col {
+    -ms-flex: 1; /* IE10 */
+    flex: 1;
+    flex-direction: column;
+}
+
+.big-col{
+    -ms-flex: 5;
+    flex:5;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    margin-left: 2.5em;
+    float: right;
+}
+
+.left-side {
+    float: left;
+    width: 65%;
+    margin-top: 10px;
+}
+
+.col h4 {
+    margin-bottom: 1.75rem;
+    font-size: 1rem;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: .1em solid #ccc;
+    border-radius: .3rem;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+/* Header and Nav */
+.header{ 
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.title-col{
+    -ms-flex:2;
+    flex:2;
+}
+
+.title-col h1{
+    padding-left:4rem;
+    padding-right:2rem; 
+    font-style: italic;
+    letter-spacing: -.15rem;
+}
+
+.navigation-col{
+    -ms-flex:2;
+    flex:2;
+    align-self:flex-end;
+    flex-wrap:nowrap;
+}
+
+
+/* Media queries (for mobile site scaling) */
+@media(max-width:850px){
+    .flex-grid{
+        display: block;
+    }
+    .project{
+        display: block;
+    }
+    .row{
+        display:column;
+    }
+}
+
+@media(max-width:630px){
+    .header{
+        display: block;
+    }
+}
+
+
+
+

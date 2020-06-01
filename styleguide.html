@@ -1,0 +1,388 @@
+<DOCTYPE html>
+    <!-- Declaring that this page's language is in English -->
+<html lang="en">
+
+<head>
+    <!--//META TAG SECTION: these are only in the code,
+     but can help with SEO (search engine optimization)-->
+
+    <!--Scales the page to fit the device's viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Tells search engines what keyboard character set this page is written for-->
+    <meta charset="UTF-8">
+    <!--Sets author of page-->
+    <meta name="author" content="Preston Romey">
+    <!--Creates the title of the page-->
+    <Title>Porfolio StyleGuide</Title>
+    <!--Creates the descripton of the page-->
+    <meta name="description" content="The StyleGuide for my Portfolio, 
+        containing the basic elements of every form on my site">
+    <!--Sets keywords to help browsers locate page-->
+    <meta name="keywords" content="Design,UX,User,Experience,UI,Interface,Coding,Portfolio,Student">
+   <!--link this page to the css-->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <!--Access to Google font roboto-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+
+<body>
+
+<!--//Intro Animation?-->
+
+<!--//HEADER-->
+
+    <header>
+
+      <h1>Portfolio Style Guide </h1>
+
+      <p>Portfolio Components and Style Guide</p>
+
+      <nav>
+          <a href="./home.html">Projects Page</a>
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="./product-1.html">Project listing Template</a>
+          <a href="#citations">Citations</a>
+      </nav>
+
+    </header>
+      
+    <main>
+        <!-- INTERACTIVE ELEMENTS SECTION // -->
+
+          <section id="interactive_elements">
+              <h2>Interactive Elements</h2>
+
+              <section class="element">
+                  <h4>In-text link</h4>
+
+                  <h5>CSS Selector</h5>
+
+                  <h5>Sample code:</h5>
+                  <code>&lt;a href="#"&gt;Link&lt;/a&gt;</code>
+
+                  <h5>Rendered element:</h5>
+                  <a href="#">Link</a>
+              </section>
+
+              <!-- Default Button styling section -->
+              <section class="element">
+                  <h4>Navigation Link</h4>
+
+                  <h5>CSS selector:</h5>
+                  <p>.button-nav</p>
+
+                  <h5>Sample code:</h5>
+                  <code>&lt;a class="button-nav" href="#"&gt;Default Button&lt;/a&gt;</code>
+
+                  <h5>Rendered element:</h5>
+                  <a class="button-nav" href="#">Default Button</a>
+              </section>
+
+              <section class="element">
+                  <h4>Submit/Reset Buttons</h4>
+
+                  <h5>CSS selector:</h5>
+                  <p>.button-sub</p>
+
+                  <h5>Sample code:</h5>
+                  <code>&lt;a class="button-sub" href="#"&gt;Submit Button&lt;/a&gt;</code>
+
+                  <h5>Rendered element:</h5>
+                  <a class="button-sub" href="#">Submit Button</a>
+              </section>
+              
+              <section class="element">
+                  <h4>Text Input Field with Label</h4>
+
+                  <h5>CSS Selector</h5>
+
+                  <h5>Sample code:</h5>
+                  <code>
+                      &lt;form action="#" method="post"&gt;
+                      &lt;div class="input"&gt;
+                      &lt;label for="text"&gt;Text Input:&lt;/label&gt;
+                      &lt;input type="text" id="text" name="text"&gt;
+                      &lt;/div&gt;
+                      &lt;/form&gt;
+                  </code>
+                  
+                  <h5>Rendered element:</h5>
+                  <form action="#" method="post">
+                      <div class="input">
+                          <label for="text">Text Input:</label>
+                          <input type="text" id="text" name="text">
+                      </div>
+                  </form>
+              </section>
+
+              <section class="element">
+                  <h4>Radio Button with Label</h4>
+
+                  <h5>CSS Selector</h5>
+
+                  <h5>Sample code:</h5>
+                  <code>
+                      &lt;label class="container"&gt;One&lt;input type="radio" checked="checked" name="radio"&gt;
+                      &lt;span class="checkmark"&gt;
+                      &lt;/span&gt;
+                      &lt;/label&gt;
+                  </code>
+
+                  <h5>Rendered element:</h5>
+                  <div>
+                      <label class="radio-btn">
+                          One
+                          <input type="radio" checked="checked" name="radio">
+                          <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-btn">
+                          Two
+                          <input type="radio" name="radio">
+                          <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-btn">
+                          Three
+                          <input type="radio" name="radio">
+                          <span class="checkmark"></span>
+                      </label>
+                  </div>
+              </section>
+
+              <section class="element">
+                  <h4>Image as a Link</h4>
+
+                  <h5>CSS selector:</h5>
+
+                  <h5>Sample code:</h5>
+                  <code>
+                      &lt;a class="img-link" href="#"&gt;
+                      &lt;img id="img" alt="img" src="./img/name.jpg"&gt;
+                      &lt;/a&gt;
+                  </code>
+
+                  <h5>Rendered element:</h5>
+                  <a class="img-link" href="#">
+                      <img id="photo" alt="description of img" src="./img/twitter.png">
+                  </a>
+              </section>
+          </section>
+         
+          <!-- TEXT ELEMENTS SECTION // -->
+
+          <section id="text_elements">
+              <h2>Text Elements</h2>
+
+              <section class="element">
+                  <h4>Headings</h4>
+
+                  <h5>CSS Selector</h5>
+
+                  <h5>Sample code:</h5>
+                  <code>
+                      &lt;h1&gt;Heading 1&lt;/h1&gt;
+                      &lt;h2&gt;Heading 2&lt;/h2&gt;
+                      &lt;h3&gt;Heading 3&lt;/h3&gt;
+                      &lt;h4&gt;Heading 4&lt;/h4&gt;
+                  </code>
+
+                  <h5>Rendered element:</h5>
+                  <h1>Heading 1</h1>
+                  <h2>Heading 2</h2>
+                  <h3>Heading 3</h3>
+                  <h4>Heading 4</h4>
+                  <h5>Heading 5</h5>
+              </section>
+
+              <section class="element">
+                  <h4>Paragraphs</h4>
+
+                  <h5>CSS Selector</h5>
+
+                  <h5>Sample code:</h5>
+                  <code>&lt;p&gt;Lorem ipsum...&lt;/p&gt;</code>
+
+                  <h5>Rendered element:</h5>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis
+                      varius dui a rhoncus. Curabitur bibendum vulputate risus, vel aliquet magna
+                      gravida ullamcorper. Pellentesque nec augue ac dui sodales consequat sed sit
+                      amet lorem. Cras sagittis odio eleifend sagittis blandit.Praesent nec iaculis
+                      neque. Phasellus id lacus non mi accumsan tincidunt nec vel eros. Ut tempor
+                      volutpat magna. Pellentesque non tempor turpis, quis tristique magna. Integer
+                      nisl nulla, sagittis ut ipsum nec, lacinia pulvinar libero. Nunc euismod lacus
+                      eu sagittis lobortis. Maecenas a volutpat elit. Ut laoreet sapien nisl, eget
+                      volutpat nibh congue at.
+                  </p>
+              </section>
+
+              <section class="element">
+                  <h4>Numbered Lists</h4>
+
+                  <h5>CSS Selector</h5>
+
+                  <h5>Sample code:</h5>
+                  <code>
+                      &lt;ol&gt;
+                      &lt;li&gt;One&lt;/li&gt;
+                      &lt;li&gt;Two&lt;/li&gt;
+                      &lt;li&gt;Three&lt;/li&gt;
+                      &lt;/ol&gt;
+                  </code>
+
+                  <h5>Rendered element:</h5>
+                      <ol>
+                          <li>One</li>
+                          <li>Two</li>
+                          <li>Three</li>
+                      </ol>
+              </section>
+          </section>
+          
+          <!-- COMBINED ELEMENTS SECTION // -->
+
+          <section id="combined_elements">
+              <h2>Combined Elements</h2>
+
+              <section class="element">
+                  <h4>Main Navigation</h4>
+
+                  <h5>CSS Selector</h5>
+
+                  <h5>Sample code:</h5>
+                  <code>
+                      &lt;ul class="nav"&gt;
+                      &lt;li class="nav"&gt;
+                      &lt;a href="#home"&gt;Home&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;/ul&gt;
+                  </code>
+
+                  <h5>Rendered element:</h5>
+                  <ul class="nav">
+                      <li class="nav"><a href="#">Projects</a></li>
+                      <li class="nav"><a href="#about">About</a></li>
+                      <li class="nav"><a href="#contact">Contact</a></li>
+                  </ul>
+              </section>
+
+              <section class="element">
+                  <h4>Project Element</h4>
+
+                  <h5>CSS Selector</h5>
+
+                  <h5>Sample code:</h5>
+                  &lt;a href="#"&gt;
+                  &lt;h5&gt; Project Title &lt;/h5&gt;
+                  &lt;img id="project img" alt="Description of img" src="./img/FILENAME.png"&gt;
+                  &lt;p&gt; Description of the oroject. Short, 1 to 2 sentence pitch.&lt;/p&gt;
+                  
+                  <h5>Rendered element:</h5>
+
+                  <div class="project">
+                    <a href="#">
+                        <!--Project Title-->
+                        <div class="title-row">
+                            <h5>UX: Twitter Emergencies</h5>
+                        </div>
+
+                        <!--Image-->
+                        <div class="img-row">
+                            <img id="project Img" alt="A screen of the Project's User Interface" src="./img/twitter.png">
+                        </div>
+
+                        <!--Description-->
+                        <div class="description-row">
+                            <p>Streamlining twitter's emergency resources</p>
+                        </div>
+                    </a>
+                    </div>
+
+              </section>
+
+              <!--Video-->
+              <section class="element">
+                <h4>Video</h4>
+
+                <h5>Sample Code:</h5>
+                <code>
+                    &lt;video width="WIDTH_VALUE" height="HEIGHT_VALUE" controls&gt;
+                    &lt;source src="./vid/VIDEO_TITLE.EXTENSION"&gt;
+                    Sorry, your browser does not support this video. (only appears when video does not)
+                    &lt;/video&gt;
+                </code>
+
+                <h5>Rendered Element:</h5>
+                <video width="1440" height="1080" controls>
+                    <source src="./vid/twitter_vid.mp4">
+                Sorry, your browser does not support this project concept video.
+                </video>
+              </section>
+
+
+
+              <!--CONTACT FORM-->
+
+              <section class="element">
+                  <h4>Contact Form</h4>
+
+                  <h5>CSS Selector</h5>
+
+                  <h5>Sample code:</h5>
+                  <code>
+                  </code>
+
+                  <h5>Rendered element:</h5>
+
+                  <div class="form">
+                      <div class="col">
+                        <div class="row-element">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="row-element">
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" required> 
+                        </div>
+                      </div>
+                      <div class="col">
+                            <label for="subject">Subject</label>
+                            <input class="input-Long" type="text" id="subject" name="subject" required> 
+                      </div>
+                      <div class="col">
+                                <label for="message">Message</label>
+                                <input class="input-Large" type="text" id="message" name="message">
+                          </div>
+                      <div class="col">
+                            <input type="submit" value="Send" class="btn">
+                      </div>    
+                  </div>
+
+              </section>
+          </section>
+</main>
+<footer>
+          <!--FOOTER-->
+          <section id="footer">
+            
+          </section>
+
+          <!-- // CITATIONS -->
+
+          <section id="citations">
+              <h2>Citations</h2>
+              <ul>
+                  <li>w3schools.com.<strong>HTML Images</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_images.asp">https://www.w3schools.com/html/html_images.asp</a>.</li>
+              </ul>
+          </section>
+</footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,557 @@
+/*
+  STYLE GUIDE STYLING 
+*/
+
+body {
+    font-family: 'telegrafultrabold', Helvetica, Roboto, Arial, sans-serif;
+    min-height:100%;
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+main{
+    padding: 2rem;
+    font-weight: 300;
+}
+
+header{
+    padding:2rem;
+}
+
+
+/* Styling sections */
+
+section.element {
+    padding-bottom: 1rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    margin:0;
+    border:0;
+    padding:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:5rem;
+}
+
+.footer p {
+    color: white;
+    font-weight: 100;
+    font-size: .8rem;
+    padding: 0.25rem;
+    margin:0;
+    line-height: .3rem;
+    text-align:right;
+    float:right;
+    padding-right:2rem;
+}
+
+    .footer h2 {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem;
+        padding-top: 2rem;
+    }
+
+    .footer img {
+        width: 65px;
+        height: 65px;
+        display: inline-block;
+    }
+    
+    .item {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .caption {
+        padding-top: 1rem;
+        display: block;
+    }
+
+    .input {
+        width: 40%;
+    }
+    
+    #comment-form {
+        padding-top: 2rem;
+    }
+    
+    #big-input {
+        width: 100%;
+        height: 200px;
+    }
+    
+    code {
+      background-color: #EEE;
+      padding: 0.5rem;
+      display: block;
+    }
+
+
+/* DIV */
+
+div {
+    padding-top: 1rem;
+}
+
+div.element{
+    padding-bottom: 1rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+.outer-div {
+    padding: 20px;
+    text-align: center;
+}
+
+.inner-div {
+    display: block;
+    align-content: center;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.inner-div p {
+    width: 70%;
+    padding: 20px;
+    text-align: left;
+}
+
+.inner-div img {
+    width: 250px;
+    height: 250px;
+    padding-right: 10px;
+}
+
+
+/* IMAGES */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.analysis{
+    margin-bottom: 5rem;
+}
+
+#main-img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    align-self: center;
+}
+
+#cover-img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+#google-map {
+    margin-top: 2rem;
+    width: 30rem;
+    height: 20rem;
+    align-self: center;
+}
+
+
+/* VIDEOS */
+/* help from https://www.w3schools.com/css/css_rwd_videos.asp */
+video {
+    width:100%;
+    height:auto;
+    max-width: 100%;
+    padding-bottom: 5rem;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the in-text link */
+a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+}
+
+/* Styling in-text link (hover and focus state) */
+    a:hover, a:focus {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(53, 106, 252);
+        transition-duration: 1s;
+    }
+
+/* Styling image as a link (hover and focus state) */
+.img-link:hover {
+    background-color: transparent;
+    color: rgb(53, 106, 252);
+    opacity: 0.75;
+}
+
+.input-Long{
+    width: 100%;
+}
+
+.input-Large{
+    width: 100%;
+    height: 20em;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    background-color: #eee;
+    border-radius: 30%;
+}
+
+    /* On mouse-over, add a grey background color */
+    .radio-btn:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a pink background */
+    .radio-btn input:checked ~ .checkmark {
+        background-color: rgb(53, 106, 252);
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .radio-btn input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .radio-btn .checkmark:after {
+        top: 5px;
+        left: 5px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: white;
+    }
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/*
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css?family=Roboto");
+}
+*/
+
+h1 {
+    font-family: 'telegrafregular';
+    font-size: 2.5em;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom:5rem;
+}
+
+h4 {
+    font-style: italic;
+    margin-top: 1.25rem;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: .75em;
+    text-transform: uppercase;
+}
+
+#name {
+    text-align: center;
+}
+
+.up {
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.element p{
+    margin-top:1rem;
+    max-width: 30rem;
+}
+
+p {
+    margin-top: 0;
+    display: inline-block; 
+    line-height: 1.5rem;
+    font-size: 1em;
+    margin-bottom: 5rem;
+    font-weight: 100;
+}
+
+ul {
+    padding-left: 2px;
+}
+
+#citations ul {
+    padding-left: 20px;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: rgb(53, 106, 252);*/
+    background-image: linear-gradient(to right,rgb(53, 106, 252), rgb(255, 71, 71), rgb(255, 243, 71))
+}
+
+ol {
+    padding-left: 3rem;
+    font-size: 1em;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+    li.nav {
+        float: left;
+    }
+
+        li.nav:last-child {
+            float: right;
+        }
+
+        li.nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+            li.nav a:hover {
+                background-color: white;
+                border: .1em;
+                border-style: solid;
+                border-color: black;
+                color: black;
+                transition-duration: 1s;
+            }
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+
+
+/* Columns */
+.left-column {
+    width: 25%;
+    position: relative;
+}
+
+@media(max-width:1100px){
+    .product{
+        display: block;
+    }
+}
+
+.right-column {
+    width: 50%;
+}
+
+/* Left Column */
+.left-column img {
+    width: 15rem;
+    height: 17rem;
+    top: 1.5rem;
+    left: 0;
+    opacity: 10;
+    transition: all 0.3s ease;
+}
+
+.left-column img.active {
+    opacity: 1;
+}
+
+#overview {
+    border-bottom: 1px solid #E1E8EE;
+    padding-bottom: 0;
+}
+
+}
+
+    #overview ul {
+        font-size: 16px;
+        line-height: 2rem;
+        color: #999999;
+        line-height: 24px;
+        padding-left: 20px;
+        float: left;
+        width: 73%;
+    }
+
+
+
+/* NAVIGATION ------------- */ 
+
+nav {
+    display: -ms-flexbox;
+    display: flexbox;
+    flex-wrap: nowrap;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+    flex: 1;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/* Styling nav button (hover and focus state) */
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(53, 106, 252);
+  color: white;
+}
+
+nav a{
+    padding: 2rem;
+}
+
+
+/*BUTTONS -----------*/
+
+.btn {
+    padding: 1rem;
+    margin: 0.25em;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    transition:1s;
+}
+
+    .btn:hover, .btn:focus{
+        background-color: white;
+        color:black;
+        border-style:solid;
+        border-width:.1em;
+        border-color:black;
+        transition:1s ease;
+        
+    }
+
+#cart-btn {
+    width: 116%;
+    padding: 1rem;
+    margin-top: 0.75rem;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(53, 106, 252);
+}
+
+    #cart-btn:hover {
+        background-color: black;
+    }
+
+.cart-btn {
+    display: inline-block;
+    background-color: rgb(53, 106, 252);
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: 0.4s;
+}
+
+    .cart-btn:hover {
+        background-color: black;
+        color: #FFFFFF;
+    }
+
+/* Styling for the submit button */
+.button-sub {
+    width: 50%;
+    display: inline-block;
+    padding: 0.75rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+    /* Styling submit button (hover and focus state) */
+    .button-sub:hover, .button-sub:focus {
+        background-color: rgb(53, 106, 252);
+        color: white;
+    }
+
+
+/* Styling for the radio button */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio */
+.radio-btn {
+    display: block;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+    /* Hide the browser's default radio button */
+    .radio-btn input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
