@@ -49,7 +49,7 @@ if (currentTheme) {
 
         emergenciesPhone = document.getElementById('emergencies_phone');
         emergenciesPhone.style.position= 'relative';
-        emergenciesPhone.style.top = '0rem';
+        emergenciesPhone.style.top = '-10rem';
         emergenciesPhone.style.left = '6.5rem';
         
         emergenciesLaptop = document.getElementById('emergencies_laptop');
@@ -58,43 +58,75 @@ if (currentTheme) {
         emergenciesLaptop.style.left = '-7rem';
     }
 
+
     function moveRight(img1){
         //emergenciesImg.style.left = parseInt(emergenciesImg.style.left) + 5 + 'rem';
         img1.style.left = parseInt(img1.style.left) + 1 + 'rem';
         animate = setTimeout(moveRight, 100, img1);
     }
 
+
     function bounce(img){
         var posx;
         var posy;
+        var initialPosX;
+        var initialPosY;
         var vely;
         var animate;
 
-        var goingUp = new boolean(false);
-        var goinDown = new boolean(false);
-        var notMoving = new boolean(true);
+        var goingUp = new Boolean(false);
+        var goingDown = new Boolean(false);
+        var notMoving = new Boolean(true);
+
+        initialPosX = img.style.left;
+        initialPosY = img.style.top;
 
         posx = img.style.left;
         posy = img.style.top;
+        
+        move();
 
-        if (goingUp == true){
-            vely = -1;
-            notMoving = false;
-        } if (goingDown == true){
-            vely = 1;
-            nootMoving = false;
-        } if (notMoving == true){
-            vely = 0;
+        function move(){
+            
+
+            if (notMoving == false){
+                move();
+            }
         }
 
-        function stop(img){
+        if (goingUp == true){
+            notMoving = false;
+            moveUp();
+        } if (goingDown == true){
+            notMoving = false;
+            moveDown();
+        } if (notMoving == true){
+            stop();
+            resetPos();
+        }
+
+        function moveUp(){
+            vely = -1;
+            img.style.top += vely + 'px';
+        }
+
+        function moveDown(){
+            vely = 1;
+            img.style.top += vely + 'px';
+        }
+
+        function resetPos(){
+            img.style.left = initialPosX;
+            img.style.top = initialPosY;
+        }
+
+        function stop(){
+            vely = 0;
             notMoving = true;
             goingDown = false;
             goingUp = false;
             clearTimeout(animate)
         }
-
-
     }
 
 

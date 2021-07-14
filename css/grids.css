@@ -191,17 +191,37 @@ a .img-row img{
     border: .1rem, solid, var(--black);
 }
 
+@keyframes bob {
+    0%      {top: 1rem;}
+    25%     {top: 0rem;}
+    50%     {top: 1rem;}
+    75%     {top: 2rem;}
+    100%    {top: 1rem;}
+  }
+
+
+#wrap{
+    transform:scale(25%);
+}
+
 .clip #emergencies_phone{
-    transform: scale(25%);
     grid-column: 1;
     grid-row: 1;
-    max-width:100%;
     position:relative;
+    transform: scale(25%);   
+}
+
+a:hover .clip #emergencies_phone{
+    animation: bob 5s infinite;
 }
 
 .clip #emergencies_laptop{
     grid-column: 1;
     grid-row: 1;
+}
+
+a:hover .clip #emergencies_laptop{
+    animation: bob 5s infinite;
 }
 
 .clip #verified_shield{
@@ -215,9 +235,9 @@ a .img-row img{
 .clip{
     clip-path: inset(0 0 0 0);
     background-color: 2AA3EF;
+    background-size: cover;
     display: grid;
-    height:auto;
-    width:auto;
+    height: 15%;
 }
 
 
